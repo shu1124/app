@@ -5,6 +5,7 @@ import plotly.graph_objs as go
 import pandas as pd
 import datetime
 
+
 from assets.database import db_session
 from assets.models import Data
 
