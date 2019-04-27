@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import pandas as pd
 
 from assets.database import db_session
 from assets.models import Data
@@ -27,7 +28,6 @@ def get_udemy_info():
     return results
 
 def write_data():
-    df = pd.read_csv('assets/data.csv')
     # 新規のデータ
     _results = get_udemy_info()
     # 書き込むデータ
